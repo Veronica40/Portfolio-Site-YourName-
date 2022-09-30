@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">    
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Veronica">
@@ -7,24 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>VeronicaPortfolio</title>
+    <script src="https://kit.fontawesome.com/bfd2d3da4e.js" crossorigin="anonymous"></script>
+      <title>VeronicaPortfolio</title>
   </head>
   <body id="index">
     <!-- For the header -->
-	<header>
+
 		<!-- For the navigation -->
-		<div class="container">
-            <a href="index.html">
+    <header>
+  <div class="container">
+    <div class="navtoggle" id="myNavtoggle">
+
+	           <a href="index.html">
 			 <img src="https://via.placeholder.com/150x50?text=Logo" class="logo" alt="Logo" >
             </a>
             <nav>
               <ul class="navigation">
                 <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
+
+                <li> <p id="click_advance"> <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></p> </li>
+
               </ul>
             </nav>
 		</div>
+  </div>
 	</header>
 
     <main>
@@ -63,7 +71,7 @@
                     <a href="project_page.html" class="button">Read more</a><!-- button or link label -->
                   </div><!-- end second column -->
                 </div><!-- end row that holds (2) columns for project -->
-                
+
                 <!--Project Two-->
                 <div class="row" style="border-bottom: 2px solid #4a4a4a; margin-bottom: 40px;"><!-- open row that holds (2) columns for project -->
                   <div class=" col-md-6 col-lg-7"><!-- open first column (used for image) -->
@@ -73,7 +81,7 @@
                     </picture>
                   </div><!-- end first column -->
                   <div class="column col-md-6 col-lg-5"><!-- open second column (used for text) -->
-                    <h3>Project two</h3><!-- heading for the project -->
+                    <h3>Car Pot Cook'n</h3><!-- heading for the project -->
                     <p><!-- open paragraph -->
                       Design a recipe app for individuals living the vehichle-sheltering life.
                     </p><!-- end paragraph -->
@@ -703,7 +711,7 @@
 	<footer id="contact">
 		<div class="container">
             <h2>Get in touch</h2>
-            <p>Do you like my work and want to discuss opportunities? Please get in touch.</p> 
+            <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
             <p>Call: <a href="tel:+555-555-5551">+555-555-5551</a> or Skype me at <a href="skype:hello.careerfoundry">hello.careerfoundry</a>.</p>
             <p>Prefer sending an email?</p>
             <div>
@@ -713,7 +721,7 @@
             <!--Social Media Layout and Placeholders-->
             <!--For students, the images below should be updated with real svgs and links should be updated-->
                 <li>
-                      <a href="https://www.linkedin.com/in/veronica-andrews-702811237/" target="_blank">
+                    <a href="https://www.linkedin.com/in/veronica-andrews-702811237/" target="_blank">
                         <img src="img/social_media_logo/linkedin_official_logo.png" alt="LinkedIn">
                     </a>
                 </li>
@@ -735,8 +743,10 @@
             </ul>
             <p>Copyright Veronica Andrews 2022</p>
         </div>
-        
+
 	</footer>
-	<script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
   </body>
+
 </html>
