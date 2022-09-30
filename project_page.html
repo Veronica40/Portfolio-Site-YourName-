@@ -7,24 +7,31 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
-  </head>
+    <script src="https://kit.fontawesome.com/bfd2d3da4e.js" crossorigin="anonymous"></script>
+      </head>
   <body id="index">
   	<!-- For the header -->
-  	<header>
-  		<div>
-        <div class="container">
-            <a href="index.html">
+    <header>
+  <div class="container">
+    <div class="navtoggle" id="myNavtoggle">
+
+	           <a href="index.html">
 			 <img src="https://via.placeholder.com/150x50?text=Logo" class="logo" alt="Logo" >
             </a>
             <nav>
               <ul class="navigation">
                 <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
+
+                <li> <p id="click_advance"> <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></p> </li>
+
               </ul>
             </nav>
-      </div>
-  	</header>
+		</div>
+  </div>
+	</header>
+
 <main>
   <div class="container">
     <h1>Woman At Home</h1>
@@ -42,9 +49,9 @@
             <p>
               Many women don't wear the same clothing at home that would be worn outside. Because
               women are working remotely now than ever, there is a need for lounge style clothing that
-              allows for comfort and style where woman can look good with minimum effort .
+              allows for comfort and style where a woman can look and feel her best with minimum effort .
 ​
-              Our online store offers a variety of products that beautify you and your home.
+              Our online store offers a variety of products that beautify your wardobe and home.
             </p>
 ​
       <h3>Solution</h3>
@@ -65,29 +72,29 @@
     </div>
     <div>
         <picture><!--For students, the images below should be updated with real images-->
-          <source srcset="http://via.design_process.com/600x400" media="(max-width:767px)">
-          <img src="http://via.design_process.com/1200x800" alt="My Image">
+          <source srcset="img/woman_at_home/design_process.png" media="(max-width:767px)">
+          <img src="img/woman_at_home/design_process.png" alt="My Image">
         </picture>
     </div>
 ​
     <div>
         <picture><!--For students, the images below should be updated with real images-->
-            <source srcset="http://via.the_competitors.com/600x400" media="(max-width:767px)">
-            <img src="http://via.the_competitors.com/1200x800" alt="My Image">
+            <source srcset="img/woman_at_home/the_competitors.png" media="(max-width:767px)">
+            <img src="img/woman_at_home/the_competitors.png" alt="My Image">
         </picture>
     </div>
 ​
     <div>
         <picture><!--For students, the images below should be updated with real images-->
-            <source srcset="http://via.feed_back_from_testers.com/600x400" media="(max-width:767px)">
-            <img src="http://via.feed_back_from_testers.com/1200x800" alt="My Image">
+            <source srcset="img/woman_at_home/feed_back_from_testers.png" media="(max-width:767px)">
+            <img src="img/woman_at_home/feed_back_from_testers.png" alt="My Image">
         </picture>
     </div>
 ​
     <div>
         <picture><!--For students, the images below should be updated with real images-->
-            <source srcset="http://via.hi_fi_wireframes.com/600x400" media="(max-width:767px)">
-            <img src="http://via.hi_fi_wireframesS.com/1200x800" alt="My Image">
+            <source srcset="img/woman_at_home/hi_fi_wireframes.png" media="(max-width:767px)">
+            <img src="img/woman_at_home/hi_fi_wireframes.png" alt="My Image">
         </picture>
     </div>
 ​</div>
@@ -103,8 +110,8 @@
           <a href="mailto:office@careerfoundry.com" class="button contact">Email me</a>
         </div><div>
     <!--Social Media Layout and Placeholders-->
-      <a href="https://www.linkedin.com/in/veronica-andrews-702811237/" target="_blank">
-        <img src="img/social_media_logo/linkedin_official_logo.png" alt="LinkedIn">
+    <a href="https://www.linkedin.com/in/veronica-andrews-702811237/" target="_blank">
+        <img src="img/social_media_logo/linkedin_official_logo.png" alt="My Image">
     </a>
     <a href="TWITTER-URL" target="_blank">
         <img src="http://via.placeholder.com/32x32" alt="My Image">
@@ -122,6 +129,7 @@
       </div>
 ​
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </body>
 ​
