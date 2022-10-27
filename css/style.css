@@ -1,21 +1,27 @@
 /*-------------------------------------------Start Section---------------------------------------------*/
-
 /*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
 * {
   box-sizing: border-box;
 }
 
+
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*default body settings*/
-
 body {
-  background-color: #F5F0F7;
+  background-color: #f5f0f7;
   font-family: 'Lato', sans-serif;
-  font-size: 18px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 18px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
+}
+header img {
+  width: 100px;
+  height: 75px;
 }
 
 h1, h2, h3, h4 {
@@ -26,8 +32,6 @@ h1 {
   font-size: 2.75em;
   font-weight: 700;
 }
-
-
 
 h2 {
   font-size: 2.25em;
@@ -40,13 +44,14 @@ h3 {
   margin-top: -8px;
 }
 
-#about-page h3 { margin-top: 0;}
+#about-page h3 {
+  margin-top: 0;
+}
 
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
-
 
 /*setting images to full-width*/
 img {
@@ -56,11 +61,14 @@ img {
 /*change the default link color to your primary color (copied from your comments at the top of the document)*/
 a {
   color: #4a4a4a;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
+
 a:hover {
-  color: #B395BC;
-  text-decoration: none; /* Underlining when hovering over a link */
+  color: #b395bc;
+  text-decoration: none;
+  /* Underlining when hovering over a link */
 }
 
 /*style the current nav item green*/
@@ -70,9 +78,9 @@ a:hover {
     text-decoration: underline;
 }
 */
-
-a:active { /* selected link */
-  color: #A29E9D;
+a:active {
+  /* selected link */
+  color: #a29e9d;
 }
 
 /*Pseudo classes for Accessibility for Across the Web*/
@@ -82,63 +90,60 @@ a:focus {
   text-decoration: underline;
 }
 
-
 /*CSS code for the button class*/
 .button {
   display: inline-block;
-  background-color: #100E0E;
-  color: #B395BC;
+  background-color: #100e0e;
+  color: #b395bc;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #100E0E;
+  border-bottom: 2px solid #100e0e;
   transition: 0.8s opacity;
 }
 
 .button:hover {
   opacity: 0.8;
   color: #ffffff;
-  background-color: grey;
+  background-color: #b395bc;
   text-decoration: none;
 }
 
 .button:active {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-
 
 /*button rules for the mailto button*/
 .button.contact {
   background-color: transparent;
-  color: #100E0E;
+  color: #100e0e;
   text-transform: uppercase;
-  border: 2px solid #100E0E;
+  border: 2px solid #100e0e;
   transition: 0.8s opacity;
 }
 
 /*button class hover and active state*/
-
 .button.contact:hover {
   opacity: 0.8;
-  background-color: grey;
+  background-color: #b395bc;
   color: #ffffff;
 }
 
 .button.contact:active {
   opacity: 0.8;
-  background-color: #A29E9D;
-  color: #B395BC;
+  background-color: #a29e9d;
+  color: #b395bc;
 }
 
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*stye the page sections*/
-
 /*style the <header> element*/
 header {
-  background-color: #B395BC;
+  background-color: #b395bc;
   text-align: center;
   padding: 10px 0;
   position: relative;
@@ -156,17 +161,16 @@ header .logo {
 /*nav {
   display: inline-block;
 }*/
-
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -182,35 +186,34 @@ nav > ul > li > a {
 }
 
 .navtoggle li:not(:last-child) {
-    display: none;
-  }
+  display: none;
+}
 
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
-  background-color: #f2f2f2;
+  background-color: #b395bc;
   margin-top: 25px;
-  margin-bottom: -51%;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid #b395bc;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
 #hero {
-  background-color: #B395BC;
+  background-color: #b395bc;
   padding: 40px 0;
   display: inline-block;
   width: 100%;
@@ -221,10 +224,9 @@ nav > ul > li > a {
 }
 
 #contact {
-    background-color: #B395BC;
-    padding: 20px;
+  background-color: #b395bc;
+  padding: 20px;
 }
-
 
 /*Style the social icons*/
 .social {
@@ -243,19 +245,22 @@ nav > ul > li > a {
   height: 32px;
   width: 32px;
 }
+
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 /* Layout styling */
-
 .container {
   padding: 0 15px;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
-#work .row { padding-bottom: 20px; }
+#work .row {
+  padding-bottom: 20px;
+}
 
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
@@ -267,9 +272,17 @@ nav > ul > li > a {
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -285,10 +298,14 @@ nav > ul > li > a {
   animation: 4s color-change infinite alternate linear;
 }
 */
-
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -304,19 +321,23 @@ nav > ul > li > a {
   animation: 30s cloud-move infinite alternate linear;
 }
 */
-
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*Media Queries*/
-
 /*clear page flow*/
 .row::after {
   content: "";
@@ -346,22 +367,21 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
   }
+
   .navtoggle li:not(:last-child) {
-      display: inline-block;
-    }
+    display: inline-block;
+  }
 
-    .navtoggle li:last-child {
-      display: none;
-    }
+  .navtoggle li:last-child {
+    display: none;
+  }
 
-    .col-md-6 {
+  .col-md-6 {
     width: 50%;
     float: left;
     padding-bottom: 40px;
   }
-
 }
-
 
 /* ==============================
 Large devices (1024px or larger)
@@ -372,6 +392,7 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
   .col-lg-7 {
     width: 60%;
   }
@@ -385,12 +406,13 @@ Large devices (1024px or larger)
     float: left;
     padding-bottom: 40px;
   }
+
   .col-lg-8 {
     width: 40%;
     float: right;
   }
 
-   #about-page .col-md-6 {
-     width: 100%;
+  #about-page .col-md-6 {
+    width: 100%;
   }
 }
